@@ -4,18 +4,19 @@ Created on Fri Jan 16 11:33:12 2015
 
 @author: Bas Verbruggen
 """
+# Parse arguments
 from sys import argv
 from query_ncbi import *
 from fasta import *
-import GC_content_calculator
+from gc_calculator import *
 
-# Parse arguments
 query = argv[1]
 db = argv[2]
 
-query = 'VP28'
-db = 'nucleotide'
+#query = 'vtg1'
+#db = 'nucleotide'
 # Run scripts
 query_ncbi(query, db)
 sequences = fasta('query_result.fa')
-# GC_content_calulator(sequences)
+headers, gc_contents = calculate_all_gc(sequences)
+plot_histogram(gc_contents, query)
