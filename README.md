@@ -31,7 +31,7 @@ Projects, sub-modules and libraries
 
 Authors 
 ------------------------------------------
-Bas Verbruggen, Thomasz Stawski & Lauren Laing
+Bas Verbruggen, Tomasz Stawski & Lauren Laing
 
 Author contact
 ------------------------------------------
