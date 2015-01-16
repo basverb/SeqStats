@@ -1,2 +1,3 @@
-sequence.fasta
-query_result.fasta
+*.pyc
+*.fa
+*.fasta
